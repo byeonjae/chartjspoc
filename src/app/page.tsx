@@ -1,5 +1,5 @@
 'use client';
-import { BarChart, DoughnutChart } from './Components';
+import { BarChart, DoughnutChart, LineChart } from './Components';
 
 export default function Home() {
   return (
@@ -9,6 +9,9 @@ export default function Home() {
       </div>
       <div className='w-[512px]'>
         <DoughnutChart />
+      </div>
+      <div className='w-[512px]'>
+        <LineChart />
       </div>
     </div>
   );
