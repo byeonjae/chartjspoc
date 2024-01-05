@@ -5,6 +5,7 @@ ChartJS.register( ArcElement, Legend, Tooltip );
 
 const options = {
   responsive: true,
+  cutout: '0%',
   plugins: {
     tooltip: {
       enabled: true,
