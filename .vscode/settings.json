@@ -1,0 +1,24 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "files.autoSave": "onFocusChange",
+  "editor.renderWhitespace": "all",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "[typescriptreact]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+  "eslint.lintTask.options": "--ignore-path .eslintignore",
+  "cSpell.words": [
+    "Menlo",
+    "rvest",
+    "tailwindcss",
+    "dotenv",
+    "VERCEL",
+    "wishdev",
+    "Wishket"
+  ]
+}
