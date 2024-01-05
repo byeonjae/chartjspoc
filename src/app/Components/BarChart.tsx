@@ -1,5 +1,5 @@
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Legend } from "chart.js";
-import { Bar, Chart } from "react-chartjs-2";
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Legend, Tooltip } from "chart.js";
+import { Bar } from "react-chartjs-2";
 
 ChartJS.register(
   CategoryScale,
@@ -7,11 +7,16 @@ ChartJS.register(
   BarElement,
   Title,
   Legend,
+  Tooltip,
 );
 
 const options = {
   responsive: true,
   plugins: {
+    tooltip: {
+      enabled: true,
+      mode: 'index' as const,
+    },
     legend: {
       display: true,
       position: 'top' as const,
@@ -45,7 +50,6 @@ const data = {
 const BarChart = () => {
   return (
     <Bar options={options} data={data} />
-    // <Chart type="bar" data={data} />
   );
 };
 
